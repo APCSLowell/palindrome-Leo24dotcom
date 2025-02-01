@@ -35,15 +35,22 @@ public void tester()
     }
   }
 }
-public boolean palindrome(String lines)
-{   String ans = "";
+public boolean palindrome(String word)
+{   String ans = new String;
+    String sna = new String;
     for(int i = 0; i < lines.length(); i++){
-        if(Character.isLetter(lines.charAt(i)) == true){
-          ans = ans + lines.charAt(i);
+        if(Character.isLetter(word.charAt(i)) == true){
+          ans = ans + word.charAt(i);
         }
-      lines = lines.toLowerCase();
+      lower1 = ans.toLowerCase();
     }
-    if (reverse(ans).equals(ans)) return true;
+    for(int i = 0; i < lines.length(); i++){
+        if(Character.isLetter(reverse(word).charAt(i)) == true){
+          sna = sna + reverse(word).charAt(i);
+        }
+      rewol1 = sna.toLowerCase();
+    }
+    if (reverse(lower1).equals(rewol1)) return true;
   return false;
   //your code here
 }

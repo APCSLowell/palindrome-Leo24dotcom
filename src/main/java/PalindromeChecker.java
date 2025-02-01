@@ -35,9 +35,9 @@ public void tester()
     }
   }
 }
-public boolean palindrome(String word)
+public boolean palindrome(String lines)
 {
-    if (reverse(word).equals(word)) return true;
+    if (reverse(lines).equals(lines)) return true;
   return false;
   //your code here
   return false;
@@ -46,7 +46,7 @@ public String reverse(String str)
 {
     String sNew = new String();
   for(int i = word.length(); i > 0; i--){
-   sNew =  sNew + word.substring(i-1,i);
+   sNew =  sNew + lines.substring(i-1,i);
   }//your code here
     return sNew;
 }

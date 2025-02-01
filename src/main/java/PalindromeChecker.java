@@ -46,8 +46,8 @@ public String reverse(String str)
 {
     String sNew = new String();
   for(int i = 0; i < 7;i++){
-  for(int i = lines[i].length(); i > 0; i--){
-   sNew =  sNew + str.substring(i-1,i);
+  for(int x = str.length(); x > 0; x--){
+   sNew =  sNew + str.substring(x-1,x);
   }
   }//your code here
     return sNew;

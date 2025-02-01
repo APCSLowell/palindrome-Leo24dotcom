@@ -38,10 +38,10 @@ public void tester()
 public boolean palindrome(String lines)
 {   String ans = "";
     for(int i = 0; i < lines.length(); i++){
-        if(lines.isLetter(lines.charAt(i)) == true){
+        if(Character.isLetter(lines.charAt(i)) == true){
           ans = ans + lines.charAt(i);
         }
-      lines = lines.LowerCase();
+      lines = lines.toLowerCase();
     }
     if (reverse(ans).equals(ans)) return true;
   return false;
@@ -55,7 +55,7 @@ public String reverse(String str)
    sNew =  sNew + str.substring(x-1,x);
   }
   }
-  sNew = sNew.LowerCase();//your code here
+  sNew = sNew.toLowerCase();//your code here
     return sNew;
 }
 }

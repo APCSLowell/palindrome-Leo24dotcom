@@ -36,8 +36,8 @@ public void tester()
   }
 }
 public boolean palindrome(String word)
-{   String ans = new String;
-    String sna = new String;
+{   String ans = new String();
+    String sna = new String();
     for(int i = 0; i < lines.length(); i++){
         if(Character.isLetter(word.charAt(i)) == true){
           ans = ans + word.charAt(i);

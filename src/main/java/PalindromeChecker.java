@@ -40,7 +40,6 @@ public boolean palindrome(String lines)
     if (reverse(lines).equals(lines)) return true;
   return false;
   //your code here
-  return false;
 }
 public String reverse(String str)
 {

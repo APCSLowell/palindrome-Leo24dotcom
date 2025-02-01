@@ -42,15 +42,13 @@ public boolean palindrome(String word)
         if(Character.isLetter(word.charAt(i)) == true){
           ans = ans + word.charAt(i);
         }
-      lower1 = ans.toLowerCase();
     }
     for(int i = 0; i < lines.length(); i++){
         if(Character.isLetter(reverse(word).charAt(i)) == true){
           sna = sna + reverse(word).charAt(i);
         }
-      rewol1 = sna.toLowerCase();
     }
-    if (reverse(lower1).equals(rewol1)) return true;
+    if ans.toLowerCase().equals(sna.toLowerCase()) return true;
   return false;
   //your code here
 }

@@ -45,8 +45,10 @@ public boolean palindrome(String lines)
 public String reverse(String str)
 {
     String sNew = new String();
+  for(int i = 0; i < 7;i++){
   for(int i = lines[i].length(); i > 0; i--){
-   sNew =  sNew + lines[i].substring(i-1,i);
+   sNew =  sNew + str.substring(i-1,i);
+  }
   }//your code here
     return sNew;
 }

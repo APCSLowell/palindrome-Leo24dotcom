@@ -36,14 +36,14 @@ public void tester()
   }
 }
 public boolean palindrome(String lines)
-{   String new = "";
+{   String ans = "";
     for(int i = 0; i < lines.length(); i++){
         if(lines.isLetter(lines.charAt(i)) == true){
           new = new + lines.charAt(i);
         }
       lines = lines.LowerCase();
     }
-    if (reverse(lines).equals(lines)) return true;
+    if (reverse(ans).equals(ans)) return true;
   return false;
   //your code here
 }

@@ -36,7 +36,13 @@ public void tester()
   }
 }
 public boolean palindrome(String lines)
-{
+{   String new = "";
+    for(int i = 0; i < lines.length(); i++){
+        if(lines.isLetter(lines.charAt(i)) == true){
+          new = new + lines.charAt(i);
+        }
+      lines = lines.LowerCase();
+    }
     if (reverse(lines).equals(lines)) return true;
   return false;
   //your code here
@@ -48,7 +54,8 @@ public String reverse(String str)
   for(int x = str.length(); x > 0; x--){
    sNew =  sNew + str.substring(x-1,x);
   }
-  }//your code here
+  }
+  sNew = sNew.LowerCase();//your code here
     return sNew;
 }
 }

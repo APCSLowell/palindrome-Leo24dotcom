@@ -39,7 +39,7 @@ public boolean palindrome(String lines)
 {   String ans = "";
     for(int i = 0; i < lines.length(); i++){
         if(lines.isLetter(lines.charAt(i)) == true){
-          new = new + lines.charAt(i);
+          ans = ans + lines.charAt(i);
         }
       lines = lines.LowerCase();
     }

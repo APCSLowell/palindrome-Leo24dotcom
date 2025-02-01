@@ -48,8 +48,8 @@ public boolean palindrome(String word)
           sna = sna + reverse(word).charAt(i);
         }
     }
-    won = ans.toLowerCase();
-    too = sna.toLowerCase();
+   String won = ans.toLowerCase();
+    String too = sna.toLowerCase();
     if(won.equals(too)) return true;
   return false;
   //your code here

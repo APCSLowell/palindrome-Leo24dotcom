@@ -38,12 +38,12 @@ public void tester()
 public boolean palindrome(String word)
 {   String ans = new String();
     String sna = new String();
-    for(int i = 0; i < lines.length(); i++){
+    for(int i = 0; i < word.length(); i++){
         if(Character.isLetter(word.charAt(i)) == true){
           ans = ans + word.charAt(i);
         }
     }
-    for(int i = 0; i < lines.length(); i++){
+    for(int i = 0; i < word.length(); i++){
         if(Character.isLetter(reverse(word).charAt(i)) == true){
           sna = sna + reverse(word).charAt(i);
         }
